@@ -1,0 +1,18 @@
+---
+title: "Test"
+output: html_document
+---
+
+```{r, include=FALSE}
+setwd("/Users/jschleimer1/Documents/VPRP/My Projects/CSaWS/")
+library(rgdal)
+UPPER <- readOGR(dsn = "/Users/jschleimer1/Documents/VPRP/My Projects/CSaWS/", layer = "UPPER")
+
+```
+
+
+## State Senate Districts
+
+```{r, width = 40, height = 30, echo=FALSE}
+
+plot(UPPER)
